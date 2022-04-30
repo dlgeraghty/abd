@@ -19,11 +19,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: executing remote ssh commands 
-        uses: appleboy/ssh-action@master
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@5.2
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          script: rsync -avzr src/ docker/abd/
+          switches: -avzr --delete
+          path: src/
+          remote_path: docker/abd
+          remote_host: ${{ secrets.HOST }}
+          remote_user: ${{ secrets.USERNAME }}
+          remote_key: ${{ secrets.DEPLOY_KEY }}
