@@ -26,4 +26,4 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          script: 
+          script: rsync -avzr src/ docker/abd/
