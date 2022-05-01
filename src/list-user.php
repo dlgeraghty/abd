@@ -15,7 +15,6 @@ echo <<<GFG
             <th>joining date</th>
         </tr>
 GFG;
-"name":/.*/}
 foreach($cursor as $docuemnt){
     echo "<tr>";
     echo "<td>". $document['_id']. "</td>";
