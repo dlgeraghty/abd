@@ -23,8 +23,8 @@ jobs:
         uses: burnett01/rsync-deployments@5.2
         with:
           switches: -avzr --delete
-          path: src/index.php
-          remote_path: docker/abd/src/index.php
+          path: src/*.php
+          remote_path: docker/abd/src/*.php
           remote_host: ${{ secrets.HOST }}
           remote_user: ${{ secrets.USERNAME }}
           remote_key: ${{ secrets.DEPLOY_KEY }}

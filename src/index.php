@@ -12,6 +12,4 @@ foreach ($cursor as $document) {
     printf("%s<br>", $document['name']);
 }
 
-echo 'integration works';
-
 ?>
