@@ -4,8 +4,8 @@ include_once("config.php");
 
 $cursor = $collection->find();
 
-echo "<table>";
-echo <<<GFG 
+echo <<<GFG
+    <table>
         <tr>
             <th>id</th>
             <th>name</th>
