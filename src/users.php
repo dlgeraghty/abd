@@ -1,6 +1,6 @@
 <?php
 
-include_once(config.php);
+include_once("config.php");
 
 echo "<h1> Login </h1>";
 echo <<<GFG
