@@ -31,6 +31,7 @@ echo <<<GFG
             <form method="POST" action="update-user.php">
                 <label for="username"> Username </label><br>
                 <input type="text" name="username"><br>
+                <input type="submit" value="Update">
             </form>
 GFG;
 
@@ -39,6 +40,7 @@ echo <<<GFG
             <form method="POST" action="delete-user.php">
                 <label for="username"> Username </label><br>
                 <input type="text" name="username"><br>
+                <input type="submit" value="Delete">
             </form>
 GFG;
 
