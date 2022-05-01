@@ -18,12 +18,12 @@ GFG;
 
 foreach($cursor as $docuemnt){
     echo "<tr>";
-    echo "<td>". $document['_id'], "</td>";
-    echo "<td>". $document['name'], "</td>";
-    echo "<td>". $document['numberOfPosts'] "</td>";
-    echo "<td>". $document['birthdate'], "</td>";
-    echo "<td>". $document['password'], "</td>";
-    echo "<td>". $document['joiningDate'], "</td>";
+    echo "<td>". $document['_id']. "</td>";
+    echo "<td>". $document['name']. "</td>";
+    echo "<td>". $document['numberOfPosts']."</td>";
+    echo "<td>". $document['birthdate']. "</td>";
+    echo "<td>". $document['password']. "</td>";
+    echo "<td>". $document['joiningDate']. "</td>";
     echo "</tr>";
 }
 
