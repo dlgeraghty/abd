@@ -3,11 +3,16 @@
 include_once("config.php");
 
 $username = $_POST["username"];
-$age = $_POST["age"];
+$birthdate = $_POST["birthdate"];
+$password = $_POST["password"];
 
 $insertOne = $collection->insertOne([
     'name' => $username,
-    'age' => $age
+    'password' => $password,
+    'numberOfPosts' => 0,
+    'birthdate' => $birthdate,
+    'joiningDate' => $currentDate
+
 ]);
 
 
