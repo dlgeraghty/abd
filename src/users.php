@@ -1,6 +1,6 @@
 <?php
 
-echo "<h1> Create user </h1>"
+echo "<h1> Create user </h1>";
 echo <<<GFG
             <form method="POST" action="create-user.php">
                 <label for="username"> Username </label><br>
