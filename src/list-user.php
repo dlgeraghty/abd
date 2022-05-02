@@ -4,17 +4,19 @@ include_once("config.php");
 
 $cursor = $collection->find();
 
-echo <<<GFG
-    <table>
-        <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>number of posts</th>
-            <th>birthdate</th>
-            <th>password</th>
-            <th>joining date</th>
-        </tr>
-GFG;
+//echo <<<GFG
+//    <table>
+//        <tr>
+//            <th>id</th>
+//            <th>name</th>
+//            <th>number of posts</th>
+//            <th>birthdate</th>
+//            <th>password</th>
+//           <th>joining date</th>
+//        </tr>
+//GFG;
+//
+//
 foreach($cursor as $document){
     echo "<tr>";
     printf("<td>%s</td>", $document['name']);
