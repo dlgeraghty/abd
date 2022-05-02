@@ -15,7 +15,7 @@ echo <<<GFG
             <th>joining date</th>
         </tr>
 GFG;
-foreach($cursor as $docuemnt){
+foreach($cursor as $document){
     echo "<tr>";
     printf("<td>%s</td>", $document['name']);
     echo "<td>". $document['_id']. "</td>";
