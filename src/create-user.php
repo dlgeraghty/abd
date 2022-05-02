@@ -11,7 +11,7 @@ $insertOne = $collection->insertOne([
     'password' => $password,
     'numberOfPosts' => 0,
     'birthdate' => $birthdate,
-    'joiningDate' => $currentDate
+    'joiningDate' => new Date()
 
 ]);
 
