@@ -5,13 +5,14 @@ include_once("config.php");
 $username = $_POST["username"];
 $birthdate = $_POST["birthdate"];
 $password = $_POST["password"];
+$currentDate = date("Y-m-d h:i:sa");
 
 $insertOne = $collection->insertOne([
     'name' => $username,
     'password' => $password,
     'numberOfPosts' => 0,
     'birthdate' => $birthdate,
-    'joiningDate' => new Date()
+    'joiningDate' => $currentDate
 
 ]);
 
