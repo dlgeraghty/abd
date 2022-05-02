@@ -2,7 +2,7 @@
 
 include_once("config.php");
 
-$cursor = $collection->find(["name" => "/.*/"]);
+$cursor = $collection->find();
 
 echo <<<GFG
     <table>
@@ -17,6 +17,7 @@ echo <<<GFG
 GFG;
 foreach($cursor as $docuemnt){
     echo "<tr>";
+    printf("<td>%s</td>", $document['name']);
     echo "<td>". $document['_id']. "</td>";
     echo "<td>". $document['name']. "</td>";
     echo "<td>". $document['numberOfPosts']."</td>";
