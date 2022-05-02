@@ -8,7 +8,7 @@ $password = $_POST['password'];
 $document = $collection->findOne(['name'=>$username]);
 if($docuemt['password'] === $password){
     $_SESSION['username'] = $username;
-    $_SESSION['login'] = TRUE;
+    $_SESSION['login'] = true;
 }
 
 ?>
