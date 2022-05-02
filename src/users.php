@@ -46,10 +46,6 @@ echo <<<GFG
 GFG;
 
 echo "<h1> List users </h1>";
-echo <<<GFG
-            <form method="POST" action="list-user.php">
-                <input type="submit" value="List users">
-            </form>
-GFG;
+include_once("list-user.php");
 
 ?>

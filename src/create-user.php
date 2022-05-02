@@ -16,5 +16,7 @@ $insertOne = $collection->insertOne([
 
 ]);
 
+header('users.php');
+
 
 ?>
