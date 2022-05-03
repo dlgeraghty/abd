@@ -1,6 +1,6 @@
 <?php
 
-include_once("nav.php")
+include_once("nav.php");
 
 echo "<h1> List of blogs </h1>";
 //listar los detalles de los diferentes blogs
