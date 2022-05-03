@@ -8,9 +8,11 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 $document = $collection->findOne(['name'=>$username]);
-if($docuemt['password'] === $password){
+if($document['password'] === $password){
+    echo "login correct";
     $_SESSION['username'] = $username;
     $_SESSION['login'] = true;
 }
+header('users.php');
 
 ?>
