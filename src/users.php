@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 include_once("nav.php");
 include_once("config.php");
 
