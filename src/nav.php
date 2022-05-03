@@ -10,7 +10,7 @@ GFG;
   if ($_SESSION['login']){
     echo "<li> Welcome, ". $_SESSION['username'] . "</li>";
   }else{
-    print_r($_SESSION);
+    echo "session username: " . $_SESSION['username'] . " session login:" . $_SESSION['login'];
   }
 echo "</ul>";
 
