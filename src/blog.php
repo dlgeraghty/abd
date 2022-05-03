@@ -17,7 +17,7 @@ echo <<<GFG
         <input type="textarea" name="content"><br>
         <input type="submit" value="Submit">
     </form>
-GFG
+GFG;
 }
 
 
