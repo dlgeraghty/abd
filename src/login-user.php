@@ -8,9 +8,12 @@ $password = $_POST['password'];
 
 $document = $collection->findOne(['name'=>$username]);
 if($document['password'] === $password){
-    echo "login correct";
+    //echoing is a problem if we want to redirect after
+    //echo "login correct";
     $_SESSION['username'] = $username;
     $_SESSION['login'] = true;
 }
+
+header("Location: users.php");
 
 ?>

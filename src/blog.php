@@ -9,7 +9,7 @@ echo "<h1> List of blogs </h1>";
 if($_SESSION['login']){
     //si estas logueado, puedes crear blogs
 echo <<<GFG
-    <form method="POST" action="create-blog.php">
+    <form method="POST" action="blog/create-blog.php">
         <label for="title"> Title </label><br>
         <input type="text" name="title"><br>
         <label for="categoria"> Categoria </label><br>
