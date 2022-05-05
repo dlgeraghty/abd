@@ -1,5 +1,6 @@
 <?php
 
+include_once("header.php")
 include_once("config.php");
 
 $username = $_POST['username'];
@@ -11,6 +12,5 @@ if($document['password'] === $password){
     $_SESSION['username'] = $username;
     $_SESSION['login'] = true;
 }
-//header("Location: users.php");
 
 ?>
