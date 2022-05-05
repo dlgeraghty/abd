@@ -7,7 +7,7 @@ $title=$_POST['title'];
 $categoria=$_POST['categoria'];
 $content=$_POST['content'];
 $username=$_SESSION['username'];
-$currentDate = date("Y-m-d h:i:sa")
+$currentDate = date("Y-m-d h:i:sa");
 
 $insertOne = $collection->UserPosts->insertOne([
     'creator' => $username,
