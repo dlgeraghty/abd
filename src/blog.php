@@ -5,7 +5,7 @@ include_once("nav.php");
 
 echo "<h1> List of blogs </h1>";
 //listar los detalles de los diferentes blogs
-include_once("list-blogs.php");
+include_once("blog/list-blogs.php");
 
 if($_SESSION['login']){
     //si estas logueado, puedes crear blogs
