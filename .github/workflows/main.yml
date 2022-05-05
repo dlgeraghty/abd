@@ -22,7 +22,7 @@ jobs:
       - name: rsync deployments
         uses: burnett01/rsync-deployments@5.2
         with:
-          switches: -avzr  --include="*.php" --exclude="*"
+          switches: -avzr  --include="*" --exclude="*.json, *.lock"
           path: src/
           remote_path: docker/abd/src/
           remote_host: ${{ secrets.HOST }}
