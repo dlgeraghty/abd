@@ -11,7 +11,6 @@ if($document['password'] === $password){
     $_SESSION['username'] = $username;
     $_SESSION['login'] = true;
 }
-header("Location: users.php");
-die();
+//header("Location: users.php");
 
 ?>
