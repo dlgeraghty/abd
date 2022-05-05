@@ -7,7 +7,7 @@ $birthdate = $_POST["birthdate"];
 $password = $_POST["password"];
 $currentDate = date("Y-m-d h:i:sa");
 
-$insertOne = $collection->insertOne([
+$insertOne = $collection->users->insertOne([
     'name' => $username,
     'password' => $password,
     'numberOfPosts' => 0,

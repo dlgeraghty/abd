@@ -2,7 +2,7 @@
 
 include_once("config.php");
 
-$cursor = $collection->find();
+$cursor = $collection->users->find();
 
 echo <<<GFG
     <table>
