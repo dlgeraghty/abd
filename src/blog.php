@@ -1,5 +1,6 @@
 <?php
 
+include_once("header.php");
 include_once("nav.php");
 
 echo "<h1> List of blogs </h1>";
