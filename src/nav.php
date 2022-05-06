@@ -28,7 +28,7 @@ GFG;
   if ($_SESSION['login']){
     echo "<li> Welcome, ". $_SESSION['username'] . "</li>";
   }
-echo <<< GFG
+echo <<<GFG
     </ul>
   </div>
 </nav>
