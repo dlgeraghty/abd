@@ -21,7 +21,7 @@ echo <<<GFG
   <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
 GFG;
   if ($_SESSION['login']){
-    echo "<li class='nav-item'> Welcome, ". $_SESSION['username'] . "</li>";
+    echo "<li class='nav-item'><a class='nav-link' href='#'> Welcome, ". $_SESSION['username'] . "</a></li>";
   }
 echo <<<GFG
 </ul>
