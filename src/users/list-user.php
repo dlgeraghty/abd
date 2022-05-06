@@ -24,7 +24,7 @@ foreach($cursor as $document){
     echo "<td>". $document['birthdate']. "</td>";
     echo "<td>". $document['password']. "</td>";
     echo "<td>". $document['joiningDate']. "</td>";
-    if($_SESSION['login'] && $_SESSION['username'] == $document['creator']){
+    if($_SESSION['login'] && $_SESSION['username'] == $document['name']){
         echo "<td><button>editar</button>" ;
     }
     echo "</tr>";
