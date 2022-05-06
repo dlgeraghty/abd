@@ -5,32 +5,22 @@ include_once(__DIR__."/../config.php");
 
 $cursor = $collection->UserPosts->find();
 echo <<<GFG
-    <table>
-        <tr>
-            <th>id</th>
-            <th>creator</th>
-            <th>title</th>
-            <th>categoria</th>
-            <th>content</th>
-            <th>fecha</th>
-            <th>editar</th>
-        </tr>
+<div class="card" style="width: 18rem;">
+<div class="card-body">
 GFG;
 
 foreach($cursor as $document){
-    echo "<tr>";
-    echo "<td>". $document['_id'] ."</td>";
-    echo "<td>". $document['creator'] ."</td>";
-    echo "<td>". $document['title'] ."</td>";
-    echo "<td>". $document['categoria'] ."</td>";
-    echo "<td>". $document['content'] ."</td>";
-    echo "<td>". $document['date'] ."</td>";
+    echo "<h5 class='card-title'>".$document['title']."</h5>";
+    echo "<h6 class='card-subtitle mb-2 text-muted'>".$document['categoria']."</h6>";
+    echo "<p class='card-text'>".$document['content']."</p>";
     if($_SESSION['login'] && $_SESSION['username'] == $document['creator']){
-        echo "<td><button>editar</button>" ;
+        echo "<a href='#' class='card-link'>edit</a>";
     }
-    echo "</tr>";
+    echo "<a href='#' class='card-link'>".$document['creator']."</a>";
 }
-
-echo "</table>"
+echo <<<GFG
+    </div>
+</div>
+GFG;
 
 ?>
