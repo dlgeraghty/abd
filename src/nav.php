@@ -15,21 +15,17 @@ echo <<<GFG
   </head>
 <body>
 
-<nav class="navbar navbar-dark">
-<div class="container-fluid">
-  <div class="navbar-header">
-      <a class="navbar-brand" href="#">Proyecto ABD J.David</a>
-  </div>
-  <ul class="nav navbar-nav">
-    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="users.php">Users</a></li>
-    <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Proyecto ABD J.David</a>
+  <div class="collapse navbar-collapse">
+    <a class="nav-item" href="index.php">Home</a>
+    <a class="nav-item" href="users.php">Users</a>
+    <a class="nav-item" href="blog.php">Blog</a>
 GFG;
   if ($_SESSION['login']){
-    echo "<li class='nav-item'> Welcome, ". $_SESSION['username'] . "</li>";
+    echo "<a class='nav-item'> Welcome, ". $_SESSION['username'] . "</a>";
   }
 echo <<<GFG
-    </ul>
   </div>
 </nav>
 GFG;
