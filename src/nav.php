@@ -35,6 +35,4 @@ echo <<<GFG
 GFG;
 
 
-GFG;
-
 ?>
