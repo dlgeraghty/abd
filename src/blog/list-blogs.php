@@ -5,6 +5,8 @@ include_once(__DIR__."/../config.php");
 
 $cursor = $collection->UserPosts->find();
 
+echo "<div class='container'>"
+
 foreach($cursor as $document){
 echo '<div class="card" style="width: 18rem;">';
 echo '<div class="card-body">';
@@ -19,4 +21,5 @@ echo '</div>';
 echo '</div>';
 }
 
+echo '</div>';
 ?>
