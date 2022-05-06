@@ -21,12 +21,12 @@ echo <<<GFG
       <a class="navbar-brand" href="#">Proyecto ABD J.David</a>
   </div>
   <ul class="nav navbar-nav">
-    <li><a href="index.php">Home</a></li>
-    <li><a href="users.php">Users</a></li>
-    <li><a href="blog.php">Blog</a></li>
+    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="users.php">Users</a></li>
+    <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
 GFG;
   if ($_SESSION['login']){
-    echo "<li> Welcome, ". $_SESSION['username'] . "</li>";
+    echo "<li class="nav-item"> Welcome, ". $_SESSION['username'] . "</li>";
   }
 echo <<<GFG
     </ul>
