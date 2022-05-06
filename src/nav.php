@@ -22,7 +22,7 @@ echo <<<GFG
 GFG;
   if ($_SESSION['login']){
     echo "<li class='nav-item'><a class='nav-link' href='#'> Welcome, ". $_SESSION['username'] . "</a></li>";
-    echo "<li class='nav-item'><a class='nav-link' href='users/user-logout.php'> Welcome, ". $_SESSION['username'] . "</a></li>";
+    echo "<li class='nav-item'><a class='nav-link' href='users/user-logout.php'>logout</a></li>";
 
   }
 echo <<<GFG
