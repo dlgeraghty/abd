@@ -13,6 +13,7 @@ echo <<<GFG
             <th>categoria</th>
             <th>content</th>
             <th>fecha</th>
+            <th>editar</th>
         </tr>
 GFG;
 
@@ -24,6 +25,9 @@ foreach($cursor as $document){
     echo "<td>". $document['categoria'] ."</td>";
     echo "<td>". $document['content'] ."</td>";
     echo "<td>". $document['date'] ."</td>";
+    if($_SESSION['login'] && $_SESSION['username'] == $document['creator']){
+        echo "<td><button>editar</button>" ;
+    }
     echo "</tr>";
 }
 

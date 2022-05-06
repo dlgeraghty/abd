@@ -13,6 +13,7 @@ echo <<<GFG
             <th>birthdate</th>
             <th>password</th>
             <th>joining date</th>
+            <th>edit</th>
         </tr>
 GFG;
 foreach($cursor as $document){
@@ -23,6 +24,9 @@ foreach($cursor as $document){
     echo "<td>". $document['birthdate']. "</td>";
     echo "<td>". $document['password']. "</td>";
     echo "<td>". $document['joiningDate']. "</td>";
+    if($_SESSION['login'] && $_SESSION['username'] == $document['creator']){
+        echo "<td><button>editar</button>" ;
+    }
     echo "</tr>";
 }
 
