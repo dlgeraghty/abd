@@ -4,7 +4,7 @@ include_once(__DIR__.'/../header.php');
 include_once(__DIR__.'/../config.php');
 include_once(__DIR__.'/../nav.php');
 
-$postTitle = $_POST['post-id'];
+$postTitle = $_POST['post-title'];
 
 $document = $collection->UserPosts->findOne(['title' => $postTitle]);
 $title = $document['title'];
