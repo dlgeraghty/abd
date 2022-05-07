@@ -25,7 +25,13 @@ foreach($cursor as $document){
     echo "<td>". $document['password']. "</td>";
     echo "<td>". $document['joiningDate']. "</td>";
     if($_SESSION['login'] && $_SESSION['username'] == $document['name']){
-        echo "<td><button>editar</button>" ;
+echo <<<GFG
+        <td>
+            <form method='POST' action='../edit-user.php'>
+                <button type='submit' class='btn btn-primary'>Editar</button>
+            </form>
+        </td>
+GFG;
     }
     echo "</tr>";
 }
