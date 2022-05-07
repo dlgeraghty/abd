@@ -16,9 +16,9 @@ echo <<<GFG
 <body>
 
 <ul class="nav">
-  <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-  <li class="nav-item"><a class="nav-link" href="users.php">Users</a></li>
-  <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+  <li class="nav-item"><a class="nav-link" href="/index.php">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="/users.php">Users</a></li>
+  <li class="nav-item"><a class="nav-link" href="/blog.php">Blog</a></li>
 GFG;
   if ($_SESSION['login']){
     echo "<li class='nav-item'><a class='nav-link' href='#'> Welcome, ". $_SESSION['username'] . "</a></li>";
