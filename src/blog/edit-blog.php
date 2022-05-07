@@ -16,6 +16,8 @@ echo "<h1> Editar post ".$title."</h1>";
 
 echo <<<GFG
     <form method="POST" action="edit-blog.php">
+        <label for="title"> Title </label><br>
+        <input type="hidden" name="title" value='$title'><br>
         <label for="categoria"> Categoria </label><br>
         <input type="text" name="categoria" value='$categoria'><br>
         <label for="content"> Content </label><br>
