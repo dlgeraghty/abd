@@ -15,7 +15,7 @@ $categoria = $document['categoria'];
 echo "<h1> Editar post ".$title."</h1>";
 
 echo <<<GFG
-    <form method="POST" action="blog/edit-blog.php">
+    <form method="POST" action="edit-blog.php">
         <label for="categoria"> Categoria </label><br>
         <input type="text" name="categoria" value='$categoria'><br>
         <label for="content"> Content </label><br>
