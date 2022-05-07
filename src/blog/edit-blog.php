@@ -30,8 +30,12 @@ if(isset($_POST['update'])) {
     $categoria=$_POST['categoria'];
     $content=$_POST['content'];
     $collection->UserPosts->updateOne(
-        ['title'=> 'second test'],
-        ['$set' => ['categoria'=>'categoria']]
+        ['title'=> $title],
+        ['$set' => ['categoria'=>$categoria]]
+    );
+    $collection->UserPosts->updateOne(
+        ['title'=> $title],
+        ['$set' => ['content'=>$content]]
     );
 }
 
