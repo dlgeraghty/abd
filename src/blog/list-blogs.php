@@ -19,7 +19,8 @@ echo '<div class="col-sm-4">';
             if($_SESSION['login'] && $_SESSION['username'] == $document['creator']){
                 echo "<form>";
                     echo "<input type='hidden' name='form-name' value='".$document['_id']."'>";
-                    echo "<btn type='submit' value='editar'>";
+                    echo "<button type='submit' class='btn btn-primary'>Editar</button>";
+ 
                 echo "</form>";
             }
             echo "<a href='#' class='card-link'>".$document['creator']."</a>";
