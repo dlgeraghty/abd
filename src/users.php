@@ -9,7 +9,7 @@ echo '<div class="row">';
 
 echo '<div class="col-sm-4">';
     echo "<h1> Login </h1>";
-    echo <<<GFG
+echo <<<GFG
                 <form method="POST" action="users/login-user.php">
                     <label for="username"> Username </label><br>
                     <input type="text" name="username"><br>
@@ -17,12 +17,12 @@ echo '<div class="col-sm-4">';
                     <input type="password" name="password"><br>
                     <input type="submit" value="Submit">
                 </form>
-    GFG;
+GFG;
 echo "</div>";
 
 echo '<div class="col-sm-4">';
     echo "<h1> Create user </h1>";
-    echo <<<GFG
+echo <<<GFG
                 <form method="POST" action="users/create-user.php">
                     <label for="username"> Username </label><br>
                     <input type="text" name="username"><br>
@@ -32,29 +32,29 @@ echo '<div class="col-sm-4">';
                     <input type="password" name="password"><br>
                     <input type="submit" value="Submit">
                 </form>
-    GFG;
+GFG;
 echo "</div>";
 
 echo '<div class="col-sm-4">';
     echo "<h1> update user </h1>";
-    echo <<<GFG
+echo <<<GFG
                 <form method="POST" action="users/update-user.php">
                     <label for="username"> Username </label><br>
                     <input type="text" name="username"><br>
                     <input type="submit" value="Update">
                 </form>
-    GFG;
+GFG;
 echo "</div>";
 
 echo '<div class="col-sm-4">';
     echo "<h1> delete user </h1>";
-    echo <<<GFG
+echo <<<GFG
                 <form method="POST" action="users/delete-user.php">
                     <label for="username"> Username </label><br>
                     <input type="text" name="username"><br>
                     <input type="submit" value="Delete">
                 </form>
-    GFG;
+GFG;
 echo "</div>";
 
 echo '<div class="col-sm-8">';
