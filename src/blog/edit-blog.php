@@ -26,12 +26,12 @@ echo <<<GFG
 GFG;
 
 if(isset($_POST['update'])) {
-    echo 'TITULO: '. $_POST['title'] . '<br>';
-    echo 'CATEGORIA' . $_POST['categoria'] . '<br>';
-    echo 'CONTENT' . $_POST['content'] . '<br>';
+    $title=$_POST['title'];
+    $categoria=$_POST['categoria'];
+    $content=$_POST['content'];
     $collection->UserPosts->updateOne(
-        ['title'=>$_POST['title']],
-        ['$set' => ['categoria'=>$_POST['categoria']],['content'=>$_POST['content']]]
+        ['title'=> $title],
+        ['$set' => ['categoria'=>'categoria']],['content'=>'content']]
     );
 }
 
