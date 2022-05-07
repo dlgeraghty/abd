@@ -25,7 +25,7 @@ echo <<<GFG
 GFG;
 
 if(isset($_POST['update'])) {
-    $collection->updateOne(
+    $collection->UserPosts->updateOne(
         ['title'=>$title],
         ['$set' => ['categoria'=>$categoria],['content'=>$content]]
     );
