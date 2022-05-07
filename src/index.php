@@ -6,7 +6,7 @@ require_once('nav.php');
 $db = new MongoDB\Client("mongodb://mongodb:27017");
 
 echo <<<GFG
-
+<div class='container'>
 <h1 id="infraestructura-de-la-aplicacion">Infraestructura de la
 aplicacion</h1>
 <p>He decidido desarrollar esta aplicacion con unas herramientas
@@ -63,7 +63,7 @@ docker-compose up -d. </p>
 creados, leidos, actualizados y eliminados. Estos usuarios pueden a su
 vez crear posts en un blog, asi como ver los de los demas, actualizar
 los suyos y eliminarlos. ## Usuarios ## Posts</p>
-
+</div>
 GFG;
 
 ?>
