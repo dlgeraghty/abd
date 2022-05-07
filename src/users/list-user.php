@@ -27,7 +27,7 @@ foreach($cursor as $document){
     if($_SESSION['login'] && $_SESSION['username'] == $document['name']){
 echo <<<GFG
         <td>
-            <form method='POST' action='../edit-user.php'>
+            <form method='POST' action='users/edit-user.php'>
                 <button type='submit' class='btn btn-primary'>Editar</button>
             </form>
         </td>
