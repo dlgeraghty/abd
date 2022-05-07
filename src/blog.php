@@ -13,7 +13,7 @@ echo '<div class="row">';
     echo '<div class="col-sm-6">';
         if($_SESSION['login']){
             //si estas logueado, puedes crear blogs
-        echo <<<GFG
+echo <<<GFG
             <form method="POST" action="blog/create-blog.php">
                 <label for="title"> Title </label><br>
                 <input type="text" name="title"><br>
@@ -23,7 +23,7 @@ echo '<div class="row">';
                 <input type="textarea" name="content"><br>
                 <input type="submit" value="Submit">
             </form>
-        GFG;
+GFG;
         }
     echo '</div>';
 echo '</div>';
