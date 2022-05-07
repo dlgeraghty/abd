@@ -18,7 +18,7 @@ echo '<div class="col-sm-4">';
             echo "<p class='card-text'>".$document['content']."</p>";
             if($_SESSION['login'] && $_SESSION['username'] == $document['creator']){
                 echo "<form method='POST' action='blog/edit-blog.php'>";
-                    echo "<input type='hidden' name='post-id' value='".$document['_id']."'>";
+                    echo "<input type='hidden' name='post-title' value='".$document['title']."'>";
                     echo "<button type='submit' class='btn btn-primary'>Editar</button>";
                 echo "</form>";
             }
