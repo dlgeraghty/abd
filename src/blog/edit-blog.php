@@ -20,7 +20,7 @@ echo <<<GFG
         <input type="text" name="categoria" value='$categoria'><br>
         <label for="content"> Content </label><br>
         <input type="textarea" name="content" value='$content'><br>
-        <input type="submit" value="update">
+        <input type="submit" value="update" name="update">
     </form>
 GFG;
 
