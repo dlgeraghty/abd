@@ -17,7 +17,7 @@ echo "<h1> Editar post ".$title."</h1>";
 echo <<<GFG
     <form method="POST" action="edit-blog.php">
         <label for="title"> Title </label><br>
-        <input type="hidden" name="title" value='$title'><br>
+        <input type="text" disabled name="title" value='$title'><br>
         <label for="categoria"> Categoria </label><br>
         <input type="text" name="categoria" value='$categoria'><br>
         <label for="content"> Content </label><br>
@@ -27,9 +27,12 @@ echo <<<GFG
 GFG;
 
 if(isset($_POST['update'])) {
+    echo $_POST['title'];
+    echo $_POST['categoria'];
+    echo $_POST['content'];
     $collection->UserPosts->updateOne(
-        ['title'=>$title],
-        ['$set' => ['categoria'=>$categoria],['content'=>$content]]
+        ['title'=>$_POST['title']],
+        ['$set' => ['categoria'=>$_POST['categoria']],['content'=>$_POST['content']]]
     );
 }
 
