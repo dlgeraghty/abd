@@ -10,9 +10,11 @@ echo '<div class="row">';
         //listar los detalles de los diferentes blogs
         include_once("blog/list-blogs.php");
 
+    echo '</div>';
     echo '<div class="col-sm-6">';
         if($_SESSION['login']){
             //si estas logueado, puedes crear blogs
+            echo "<h1> Create a new blog </h1>";
 echo <<<GFG
             <form method="POST" action="blog/create-blog.php">
                 <label for="title"> Title </label><br>
