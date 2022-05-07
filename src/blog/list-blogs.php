@@ -10,7 +10,7 @@ echo '<div class="row">';
 
 foreach($cursor as $document){
 
-echo '<div class="col-sm-4">';
+echo '<div class="col-sm-6">';
     echo '<div class="card" style="width: 18rem;">';
         echo '<div class="card-body">';
             echo "<h5 class='card-title'>".$document['title']."</h5>";
