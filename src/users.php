@@ -34,18 +34,6 @@ echo <<<GFG
                 </form>
 GFG;
 echo "</div>";
-
-echo '<div class="col-sm-4">';
-    echo "<h1> update user </h1>";
-echo <<<GFG
-                <form method="POST" action="users/update-user.php">
-                    <label for="username"> Username </label><br>
-                    <input type="text" name="username"><br>
-                    <input type="submit" value="Update">
-                </form>
-GFG;
-echo "</div>";
-
 echo '<div class="col-sm-4">';
     echo "<h1> delete user </h1>";
 echo <<<GFG
@@ -57,7 +45,7 @@ echo <<<GFG
 GFG;
 echo "</div>";
 
-echo '<div class="col-sm-8">';
+echo '<div class="col-sm-12">';
     echo "<h1> List users </h1>";
     include_once("users/list-user.php");
 echo "</div>";
