@@ -25,8 +25,12 @@ echo <<<GFG
 GFG;
 
 if(isset($_POST['update'])) {
-    echo "updating...";
-
+    $collection->updateOne(
+        ['title'=>$title],
+        [$set => [
+            {'categoria'=>$categoria},
+            {'content'=>$content}
+        ]]
 }
 
 ?>
