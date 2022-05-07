@@ -27,7 +27,7 @@ GFG;
 if(isset($_POST['update'])) {
     $collection->updateOne(
         ['title'=>$title],
-        [$set => [
+        ['$set' => [
             {'categoria'=>$categoria},
             {'content'=>$content}
         ]]
