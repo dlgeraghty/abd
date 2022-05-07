@@ -28,6 +28,7 @@ if(isset($_POST['update'])) {
     $collection->updateOne(
         ['title'=>$title],
         ['$set' => ['categoria'=>$categoria],['content'=>$content]]
+    );
 }
 
 ?>
