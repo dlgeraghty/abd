@@ -8,7 +8,25 @@ $postTitle = $_POST['post-title'];
 
 $document = $collection->UserPosts->findOne(['title' => $postTitle]);
 $title = $document['title'];
+$content = $document['content'];
+$categoria = $document['categoria'];
+
 
 echo "<h1> Editar post ".$title."</h1>";
+
+echo <<<GFG
+    <form method="POST" action="blog/edit-blog.php">
+        <label for="categoria"> Categoria </label><br>
+        <input type="text" name="categoria" value='$categoria'><br>
+        <label for="content"> Content </label><br>
+        <input type="textarea" name="content" value='$content'><br>
+        <input type="submit" value="update">
+    </form>
+GFG;
+
+if(isset($_POST['update'])) {
+    echo "updating...";
+
+}
 
 ?>
