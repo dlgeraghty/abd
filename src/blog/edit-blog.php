@@ -11,7 +11,6 @@ $title = $document['title'];
 $content = $document['content'];
 $categoria = $document['categoria'];
 
-
 echo "<h1> Editar post ".$title."</h1>";
 
 echo <<<GFG
