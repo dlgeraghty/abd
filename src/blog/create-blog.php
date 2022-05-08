@@ -17,7 +17,7 @@ $insertOne = $collection->UserPosts->insertOne([
     'date' => $currentDate
 ]);
 
-header('../blog.php');
+header('Location: ../blog.php');
 
 ?>
 
