@@ -16,7 +16,7 @@ $insertOne = $collection->users->insertOne([
 
 ]);
 
-header('users.php');
+header('Location: ../users.php');
 
 
 ?>
