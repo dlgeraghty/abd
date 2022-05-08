@@ -6,6 +6,6 @@ $username = $_POST["username"];
 
 $collection->users->deleteOne(["name"=>$username]);
 
-header("users.php");
+header("Location: ../users.php");
 
 ?>
