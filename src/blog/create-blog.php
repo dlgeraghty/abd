@@ -17,6 +17,11 @@ $insertOne = $collection->UserPosts->insertOne([
     'date' => $currentDate
 ]);
 
+$updateNumberOfPosts = $collection->users->updateOne(
+    ['name' => $username],
+    ['$inc' => ['numberOfPosts':1]]
+)
+
 header('Location: ../blog.php');
 
 ?>
