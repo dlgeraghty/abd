@@ -40,8 +40,34 @@ Hay dos formas de utilizar la aplicacion:
 
 \newpage
 # Funciones de la aplicacion
-La aplicacion ofrece la gestion de usuarios. Estos pueden ser creados, leidos, actualizados y eliminados.
-Estos usuarios pueden, a su vez, crear posts en un blog, asi como ver los de los demas, actualizar los suyos.
-En lo relativo a las pestanas que aparecen en el blog, encontramos tres diferentes: por un lado, la pestana Home, en la que encontramos escrita la memoria. En esta pestana no se puede interactuar, solo nos permite visualizar la memoria que constituye la aplicacion. En segundo lugar, encontramos la pestana Users, a traves de la cual puedes loguearte como usuario. De esta manera, dicha pestana permite crear y borrar un usuario y, a su vez, ofrece una visualizacion de los usuarios listados. Por ultimo, encontramos la pestana denominada Blog, a traves de la cual se puede crear y escribir un blog siempre que estes logueado y, a su vez, puedes editar tus propios posts o publicaciones. Sin embargo, cuando no estas logueado no puedes crear ni escribir ningun post o publicacion y, de la misma manera, tampoco aparece la opcion de editar que hemos mencionado anteriormentente, por lo que no puedes editar el blog. Por otra parte, es necesario hacer referencia tambien al apartado Welcome, a. Cuando este apartado aparece, significa que estas logeado, de manera que, si dejas de estar logueado en la aplicacion, como consecuencia, este apartado desaparecera del menu. Asimismo, cabe mencionar tambien la importancia del apartado Logout. Si pinchas en el mismo, dejaras de estar logueado automaticamente y el apartado o mensaje Welcome, desaparecera del menu como hemos explicado prevoiamente. Al no estar logueado, no se pueden hacer las mismas cosas que estando logueado, de manera que se limita, de esta forma, el numero de cosas u opciones que puedes hacer y desarollar a traves de esta aplicacion: para empezar, en lo que respecta a la pestana Users y en la seccion de List Users, la columna denominada edit (para editar) sale vacia, al contrario que si estuviesemos logueados, que podriamos editar nuestro usuario y la opcion edit si que apareceria. Para continuar, tambien observamos estos cambios entre las opciones que se pueden desarrollar o no, dependiendo de si estamos logueados en la aplicacion a no en lo relativo a la pestana denominada blog y en el apartado de Welcome, a (estos cambios y diferencias aparecen especificados anteriormente en la explicacion de cada una de dichas secciones). En conclusion, podemos identificar diversas diferencias y cambios en el menu (y, por suspuesto, en apartados que constituyen el mismo), asi como en las opciones a desarrollar dependiendo de si estamos logueados o no en la app.
-## Usuarios
-## Posts
+## Introduccion
+La aplicacion ofrece la gestion de usuarios. Estos pueden ser creados, leidos, actualizados y eliminados.  
+Estos usuarios pueden, a su vez, crear posts en un blog, asi como ver los de los demas, actualizar los suyos.  
+La aplicacion presenta un estilo moderno y simple, elaborado con bootstrap
+
+## Home
+En lo relativo a las vistas que aparecen en el blog, encontramos tres diferentes: por un lado, la vista Home, en la que encontramos escrita la memoria. En esta vista no se puede interactuar, solo nos permite visualizar la memoria que constituye la aplicacion.  
+
+## Users
+En segundo lugar, encontramos la vista Users, a traves de la cual puedes loguearte como usuario. De esta manera, dicha vista permite crear y borrar un usuario y, a su vez, ofrece una visualizacion de los usuarios listados. 
+![create-user](images/create-user.jpg)
+![user-created](images/user-created.jpg)
+![user-list](images/user-list.jpg)
+![user-logged-in](images/user-logged-in.jpg)
+
+## Blog
+Por ultimo, encontramos la vista denominada Blog, a traves de la cual se puede crear y escribir un blog siempre que estes logueado y, a su vez, puedes editar tus propios posts o publicaciones. Sin embargo, cuando no estas logueado no puedes crear ni escribir ningun post o publicacion y, de la misma manera, tampoco aparece la opcion de editar que hemos mencionado anteriormentente, por lo que no puedes editar el blog. 
+![blog-list](images/blog-list.jpg)
+![blog-list-logged-in](images/blog-list-logged-in.jpg)
+
+Por otra parte, es necesario hacer referencia tambien al apartado Welcome, a. Cuando este apartado aparece, significa que estas logeado, de manera que, si dejas de estar logueado en la aplicacion, como consecuencia, este apartado desaparecera del menu.  
+Asimismo, cabe mencionar tambien la importancia del apartado Logout. Si pinchas en el mismo, dejaras de estar logueado automaticamente y el apartado o mensaje Welcome, desaparecera del menu como hemos explicado prevoiamente. Al no estar logueado, no se pueden hacer las mismas cosas que estando logueado, de manera que se limita, de esta forma, el numero de cosas u opciones que puedes hacer y desarollar a traves de esta aplicacion: para empezar, en lo que respecta a la vista Users y en la seccion de List Users, la columna denominada edit (para editar) sale vacia, al contrario que si estuviesemos logueados, que podriamos editar nuestro usuario y la opcion edit si que apareceria. Para continuar, tambien observamos estos cambios entre las opciones que se pueden desarrollar o no, dependiendo de si estamos logueados en la aplicacion a no en lo relativo a la vista denominada blog y en el apartado de Welcome, a (estos cambios y diferencias aparecen especificados anteriormente en la explicacion de cada una de dichas secciones). En conclusion, podemos identificar diversas diferencias y cambios en el menu (y, por suspuesto, en apartados que constituyen el mismo), asi como en las opciones a desarrollar dependiendo de si estamos logueados o no en la app.
+
+# Tablas de la base de datos  
+En la base de datos encontramos 2 tablas: users y UserPosts.
+
+## Users  
+Contiene documentos que representan la informacion de un usuario: id, nombre (se usa como clave para las operaciones), numero de posts, fecha de nacimiento, password, fecha de union
+
+## UserPosts  
+Contiene documentos que representan la informacion de un post: id, creador, titulo (se usa como clave para las operaciones), categoria, contenido, fecha de creacion
