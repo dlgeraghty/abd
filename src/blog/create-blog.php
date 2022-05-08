@@ -19,7 +19,7 @@ $insertOne = $collection->UserPosts->insertOne([
 
 $updateNumberOfPosts = $collection->users->updateOne(
     ['name' => $username],
-    ['$inc' => ['numberOfPosts':1]]
+    ['$inc' => ['numberOfPosts'=>1]]
 );
 
 header('Location: ../blog.php');
