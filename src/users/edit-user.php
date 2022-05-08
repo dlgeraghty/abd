@@ -18,8 +18,11 @@ GFG;
 }
 
 if(isset($_POST['update'])){
+    echo 'updating...';
     $username = $_SESSION['username'];
+    echo "username: " . $username;
     $newPassword = $_POST['password'];
+    echo "password: " . $newPassword;
     $collection->user->updateOne(
         ['name'=>$username],
         ['$set'=> ['password'=>$newPassword]]

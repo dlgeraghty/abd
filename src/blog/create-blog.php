@@ -15,7 +15,6 @@ $insertOne = $collection->UserPosts->insertOne([
     'categoria' => $categoria,
     'content' => $content,
     'date' => $currentDate
-
 ]);
 
 header('../blog.php');
