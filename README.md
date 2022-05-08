@@ -24,13 +24,18 @@ Finalmente, todo se une gracias al archivo docker-compose.yml, que es el único 
 
 ## Como arrancar la aplicacion
 Hay dos formas de utilizar la aplicacion:
-1. Como he mencionado antes, yo ya tengo la aplicacion instalada y desplegada en un servidor. Puede ser accedida y usada en la url [https://abd.lopezgeraghty.com/](https://abd.lopezgeraghty.com/) y el codigo en el repositorio de Github
+1. Como he mencionado antes, yo ya tengo la aplicacion instalada y desplegada en un servidor. Puede ser accedida y usada en la url [https://abd.lopezgeraghty.com/](https://abd.lopezgeraghty.com/) y el codigo en el repositorio de Github. Recomiendo esta opcion debido a algunas dificultades tecnicas que existen cuando se levanta la aplicacion de forma manual
 2. Si se quiere desplegar manualmente, se han de seguir los pasos que expongo:
 2.1 Se debe garantizar que hay una instalacion de docker funcionando correctamente.
 2.2 Se descarga el docker-compose.yml del repositorio, nos dirigimos directorio donde hayamos descargado el archivo y ejecutamos el comando docker-compose up -d.
 ![Instalacion 1](images/docker-steps.jpg)
 2.3 Debido a una limitacion tecnica (no se puede subir el archivo composer.json, composer.lock a Github por su peso), se debe ejecutar un comando dentro de uno de los contenedores docker. Debemos ejecutar *docker exec -it abd_web_1 /bin/bash* para entrar a la aplicacion, y una vez dentro debemos ejecutar *composer require mongodb/mongodb* como se ve en la imagen:
 ![Instalacion 2](images/docker-composer.jpg)
+2.4 Asimismo, podemos acceder al contenedor de mongodb para inspeccionar su base de datos si ejecutamos el comando docker-exec -it mongodb /bin/bash:
+![Instalacion 3](images/docker-mongo.jpg)
+2.5 Ahora, ya tendremos la aplicacion accesible desde cualquier navegador en el puerto 8090
+![Instalacion 4](images/docker-puerto.jpg)
+
 
 
 \newpage
